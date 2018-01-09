@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PPD-AA</string>
+    <!--TODO: Hide this one -->
+    <string name="default_notification_channel_id">123456</string>
 </resources>
