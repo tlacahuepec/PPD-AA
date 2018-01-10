@@ -24,7 +24,7 @@ task jacocoTestReport(type: JacocoReport, dependsOn: ['testDebugUnitTest', 'crea
 }
 
 jacoco {
-    toolVersion =  "0.7.4+"
+    toolVersion = "0.7.4+"
 }
 
 android {
@@ -47,12 +47,13 @@ android {
             testCoverageEnabled true
         }
     }
-    testOptions {
-        unitTests.all {
-            jacoco {
-                includeNoLocationClasses = true
-            }
+    testOptions.unitTests.all {
+        jacoco {
+            includeNoLocationClasses = true
         }
+    }
+    dataBinding {
+        enabled = true
     }
 }
 
